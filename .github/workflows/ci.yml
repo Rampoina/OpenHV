@@ -27,6 +27,10 @@ jobs:
         run: |
           make check
 
+      - name: Check Code
+        run: |
+          make check
+
       - name: Retrieve Changed Files
         if: github.event_name == 'pull_request'
         id: changes
